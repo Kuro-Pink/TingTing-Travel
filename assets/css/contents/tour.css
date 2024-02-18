@@ -1,0 +1,227 @@
+.tour__section {
+    
+}
+
+.tour__wrap:nth-child(2n+1) {
+    background-color: var( --background1-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-bottom: 36px;
+}
+
+.tour__wrap:nth-child(2n) {
+    background-color: var( --background2-color);
+    padding-bottom: 36px;
+}
+
+.tour__tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3.6rem 0;
+    font-size: 2.6rem;
+    color: var(--primary-color);
+}
+
+.tour__tittle--header {
+    margin-bottom: 5rem;
+}
+
+.tour__tittle--desc {
+    font-size: 2.2rem;
+    color: var(--desc--color);
+    font-weight: 500;
+}
+
+.tour__review--list {
+    padding: 16px 0 0 ;
+}
+
+.tour__review--item {
+    display: block;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    border-radius: 3px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.tour__review--tag {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    width: 68px;
+    height: 22px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    padding-left: 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; 
+    display: flex;
+    align-items: center;
+}
+
+.tour__review--tag::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+}
+
+.tour__review--tag span {
+    color: var(--white-color);
+    font-size: 1.4rem;
+
+}
+
+.tour__review--img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.review__item--content {
+    margin: 0 8px;
+    font-size: 1.4rem;
+    padding: 4px 0 0;
+    height: 90px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.review__content--tittle {
+    line-height: 2.6rem;
+    font-weight: 500;
+}
+
+.review__content--desc {
+    font-size: 1.2rem;
+}
+
+
+.tour__section--tittle {
+    text-align: center;
+    flex-direction: column;
+    padding: 3.6rem 0;
+    font-size: 2rem;
+}
+
+.tour__tittle--headding {
+
+}
+
+.tour__tittle--slogant {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+
+/* Tour item */
+.tour__content--item {
+    position: relative;
+    display: block;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    margin-top: 22px;
+}
+
+.tour__content--item-wrap {
+    margin-bottom: 32px;
+    background-color: var(--white-color);
+}
+
+.tour__img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tour__heading {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 12px;
+}
+
+.tour__desc {
+    font-size: 1.3rem;
+    color: var(--text-desc);
+    padding: 8px 0 12px;
+}
+
+.tour__price {
+    color: var(--purple-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding: 18px 0;
+}
+
+.tour__place {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+
+}
+
+.tour__rate--list {
+    display: flex;
+}
+
+.tour__rate--item {
+    padding: 4px 2px;
+}
+
+.tour__rate .tour__rate--item:last-child {
+    color: none;
+}
+
+.tour__rate--icon {
+    color: rgb(227, 227, 45);
+}
+
+.tour__buy-tickets {
+    padding: 4px 2px;
+    margin-right: 16px;
+}
+
+.tour__booked {
+    font-size: 1.2rem;
+    /* margin-left: 30%;   */
+    color: var(--text-color);
+}
+
+.tour__tag {
+    position: absolute;
+    width: 16%;
+    height: 22px;
+    top: 0;
+    left: 0;
+    color: var(--white-color);
+    background-color: var(--purple-color);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-top-left-radius: 3px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+

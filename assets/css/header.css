@@ -1,0 +1,283 @@
+.header {
+}
+
+.header__navbar {
+    background-image: var(--navbar-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    
+}
+
+/* TOPBAR */
+.header__topbar {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    height: var(--topbar-height);
+    line-height: var(--topbar-height);
+    text-transform: uppercase;
+    margin: 4px 0;
+}
+
+
+.header__topbar-left {
+    display: flex;
+    
+}
+
+.header__topbar--slogan {
+   
+    
+}
+
+    /* Social */
+.header__topbar--social {
+    
+}
+
+.social__list {
+    display: flex;
+    margin-left: 10px
+}
+
+.social__item {
+    padding: 0 6px;
+   
+
+}
+
+.social__item:hover  .social__item--link{
+    color: var(--primary-color);
+    /* animation: fadeIn linear 0.3s; */
+
+}
+
+.social__item--link {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    transition: ease 0.3s;
+    will-change: ease;
+}
+
+.header__topbar-right {
+    display: flex;
+    float: right;
+}
+
+    /* Ticket */
+.header__topbar--tickets {
+    transition: ease 0.4s;
+    will-change: ease;
+   
+}
+
+.header__topbar--tickets:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+    /* animation: fadeIn linear 0.3s; */
+
+}
+
+.ticket-icon {
+    padding-right: 3px;
+}
+
+    /* User */
+.header__topbar--user {
+    margin-left: 46px;
+}
+
+.user__login {
+    position: relative;
+    padding-right: 6px;
+    color: var(--white-color);
+    transition: ease 0.4s;
+    will-change: ease;
+
+}
+
+.user__login:hover {
+    color: var(--primary-color);
+    /* animation: fadeIn linear 0.3s; */
+
+}
+
+.user__login::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-right: 1px solid #e5e5e5;
+    height: 10px;
+    transform: translateY(-50%);
+}
+
+.user__register {
+   padding-left: 6px;
+    color: var(--white-color);
+    transition: ease 0.4s;
+    will-change: ease;
+
+}
+
+.user__register:hover{
+    color: var(--primary-color);
+    /* animation: fadeIn linear 0.3s; */
+
+}
+
+
+
+
+
+
+/* BOTBAR */
+.header__botbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 10px 0 20px;
+}
+
+.header__botbar--logo {
+    padding: 10px;
+    font-size: 2.2rem;
+}
+
+.logo-link {
+    color: var(--white-color);
+}
+
+.logo__text {
+
+}
+
+    /* Section */
+.header__botbar--section {
+    
+}
+
+.section__list {
+    display: flex;
+}
+
+.section__item {
+    padding:10px;
+    transition: ease 0.4s;
+    will-change: ease;
+}
+
+.section__item:hover .section__item--link {
+    border-bottom: 3.2px solid var(--purple-color);
+    border-radius: 1px;
+    /* animation: fadeIn linear 0.3s; */
+}
+
+.section__item--link {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+/* Tour section */
+.section__item-tour {
+    position: relative;
+    transition: ease 0.4s;
+    will-change: ease;
+
+}
+
+.section__item-tour:hover .tour__list {
+    display: block;
+    animation: fadeIn ease-in 0.3s;
+} 
+
+.section__item-tour::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100px;
+    height: 10px;
+}
+
+.tour__list {
+    position: absolute;
+    top: 100%;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.tour__item {
+    background-color: var(--white-color);
+    width: 100px;
+}
+.tour__item::before {
+    
+}
+
+.tour__item-link {
+    display: block;
+    padding: 6px 0 6px 12px;
+    color: var(--text-color);
+}
+
+.tour__item-link:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.tour__icon {
+
+}
+
+    /* Search */
+.header__botbar--search {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header__botbar--search:hover ~ .search__input {
+    display: block;
+    animation: fadeIn ease-in 0.5s;
+
+}
+
+.header__botbar--search:hover {
+    color: var(--primary-color);
+    animation: fadeIn linear 0.3s;
+
+}
+
+.search__icon {
+    font-size: 2.2rem;
+}
+
+.search__input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(164%);
+    width: 260px;
+    height: 38px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 0.2s;
+    will-change: ease;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.search__active {
+    line-height: 38px;
+    margin-left: 12px;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
